@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header {
+    background-color: #202938;
+    color: white;
+    padding: 35px 0;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+}
+
+.header p {
+    margin: 0;
+}
+
+main {
+    padding: 30px 0;
+}
+
+.search-section,
+.internship-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+.filters {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus,
+.view-button:focus {
+    outline: 3px solid #9ec5fe;
+    outline-offset: 2px;
+}
+
+.internship-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+
+.internship-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.internship-card h3 {
+    margin-top: 10px;
+}
+
+.domain {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e8eefc;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.view-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #202938;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.view-button:hover {
+    background-color: #111827;
+}
+
+.state-message {
+    text-align: center;
+    padding: 35px;
+    border: 1px dashed #aaa;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.error {
+    border-color: #d33;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+
+    .search-section,
+    .internship-section {
+        padding: 18px;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .form-group {
+        min-width: 100%;
+    }
+}
